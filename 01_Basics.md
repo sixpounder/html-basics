@@ -32,6 +32,12 @@ La struttura gerarchica deve sempre essere rispettata, è un errore formale ad e
 
 Alcuni tag, specialmente nella sezione di intestazione del documento, fanno eccezione al formato `<tag></tag>`, e vanno specificati in un formato detto _self closing_. Esempio nella prossima sezione.
 
+Alcuni tag come ad esempio `<input>` sono _auto closing_, in quanto non permettono contenuto al loro interno ma solo attributi. Questi tag sono utilizzati nel formato seguente:
+
+```html
+<input attr="..." attr2="..." />
+```
+
 ### Esempio
 
 Un esempio di documento gerarchicamente non valido:
