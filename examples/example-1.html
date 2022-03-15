@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --primary: #99042f;
+            --primary-lighter: #69001e;
+            --base-font-size: 14px;
+            --light-grey: #5e5e5e;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Article typgraphy */
+        article p {
+            font-size: var(--base-font-size);
+            text-align: justify;
+            margin-top: 42px;
+        }
+
+        /* Evita il margine superiore del primo paragrafo all'interno di un articolo */
+        article p:first-child {
+            margin-top: 0;
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 10px;
+            font-style: italic;
+            color: var(--light-grey);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color .5s ease-in-out;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: var(--primary-lighter);
+        }
+
+        .dimmed {
+            font-style: normal;
+            font-size: var(--base-font-size);
+            color: var(--light-grey);
+        }
+
+        .bg-grey {
+            background-color: var(--light-grey);
+        }
+
+        .main-layout {
+            display: flex;
+            flex-direction: column-reverse;
+
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .main-layout .left {
+            width: 100%;
+        }
+
+        .main-layout .right {
+            width: 100%;
+            margin-bottom: 42px;
+        }
+
+        .main-layout .right img {
+            display: block;
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .main-layout {
+                display: flex;
+                flex-direction: row;
+                max-width: 600px;
+            }
+
+            .main-layout .left {
+                width: 60%;
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+
+            .main-layout .right {
+                width: 40%;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Apple event</h1>
+    <div
+        class="main-layout"
+        role="presentation"
+    >
+        <div
+            class="left"
+            role="presentation"
+        >
+            <article>
+                <p>
+                    The most interesting segment of Apple’s March 8 Event dealt with the M1 Ultra chips — plural intended and explained below. Today, we’ll focus on what this latest member of the M1 family means, on what it portends for future Apple products.
+                </p>
+                <p>
+                    A brief history: the <b>M1 chip</b> was announced at Apple’s June 2020 WWDC (it’s yearly developers’ conference) with an overall theme and several promises. The new member of the Apple Silicon family (the Wikipedia article provides valuable perspective) set a tone that was to become common to all future announcements: More Power, Less Watts. In practical terms, your M1-equipped laptop would be faster and its battery would last longer — when compared to Intel-powered devices, of course. This came with one shorter term promise, a MacBook Air and a MacBook Pro to ship before year-end, and a longer one: all Macs would be converted to Apple Silicon within two years.
+                </p>
+                <p>
+                    About a year later two new M1 processors were announced: M1 Pro and M1 Max, larger chips with, in the ascending order of their names, more of everything: memory, CPU, GPU and Neural Engines cores. These late 2021 chips powered two MacBook Pro laptops in 14”and 16” diagonal screen dimensions. Real “pros” I spoke with, who develop software, rave about the speed and battery life of the new devices, the 16” version in particular.
+                </p>
+            </article>
+        </div>
+        <div class="right">
+            <img src="https://www.apple.com/v/iphone-se/g/images/overview/hero/hero_iphone_se_static__hs9s6m6gfmq2_large_2x.jpg" />
+        </div>
+    </div>
+    <footer>
+        <p>
+            Copyright APPLE 2022
+        </p>
+        <p class="dimmed">
+            Non visualizzi correttamente questa email?
+            <a target="_blank" href="https://apple.com">
+                Clicca qui
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
