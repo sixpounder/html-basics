@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --primary: #99042f;
+            --primary-bg: #ffc0d25b;
+            --primary-lighter: #69001e;
+            --base-font-size: 16px;
+            --light-grey: #5e5e5e;
+        }
+
+        html {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(243, 244, 246);
+            font-size: var(--base-font-size);
+        }
+
+        body {
+            font-size: 100%;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a {
+            color: var(--primary);
+        }
+
+        .main-layout {
+            display: flex;
+            flex-direction: column;
+
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 600px) {
+            .main-layout {
+                display: flex;
+                flex-direction: column;
+                max-width: 600px;
+            }
+        }
+
+        .box {
+            background-color: white;
+        }
+
+        .box .inner {
+            padding: 1rem 1.5rem;
+        }
+
+        .box img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .box.alternative {
+            background-color: var(--primary-bg);
+        }
+
+        .two-columns {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .two-columns .left {
+            width: 40%;
+            padding-right: .5rem;
+        }
+
+        .two-columns .left img {
+            max-width: 100%;
+        }
+
+        .two-columns .left.proposal p {
+            text-align: center;
+            margin: .3rem;
+        }
+
+        .two-columns .left.proposal p:nth-child(1),
+        .two-columns .left.proposal p:nth-child(3) {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .two-columns .left.proposal p:nth-child(2) {
+            color: var(--primary);
+            font-size: 2.2rem;
+        }
+
+        .two-columns .right {
+            width: 60%;
+            padding-left: .5rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .space-y-4 {
+            margin: 2.5rem 0;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-layout" role="presentation">
+
+        <div class="box">
+            <img src="https://as1.ftcdn.net/v2/jpg/00/75/90/34/1000_F_75903496_gdIu8YcVnpNrJdN8wccw1o0PI7GHBLfi.jpg" />
+
+            <div class="inner">
+                <p>
+                    Ciao Mauro,
+                </p>
+
+                <p>
+                    tutti noi sappiamo quanto sia importante avere cura della propria salute. Ti stai chiedendo ora se
+                    un'assicurazione sanitaria completa e flessibile possa essere un valido supporto per te e la tua
+                    famiglia?
+                </p>
+
+                <p>
+                    Vogliamo provare a risponderti, raccontandoti cosa offre <b>Formula Benessere di AXA MPS.</b>
+                </p>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <h1 class="text-center">Un esempio concreto</h1>
+            <div class="two-columns">
+                <div class="left">
+                    <img
+                        src="https://as1.ftcdn.net/v2/jpg/00/75/90/34/1000_F_75903496_gdIu8YcVnpNrJdN8wccw1o0PI7GHBLfi.jpg" />
+                </div>
+                <div class="text-center right">
+                    Marco è un uomo di 57 anni che vive a Palermo.
+
+                    "Un fastidioso dolore alla gamba stava per rovinare i miei progetti.
+                    Ma con le cure giuste li ho rimessi subito in piedi."
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://as1.ftcdn.net/v2/jpg/00/75/90/34/1000_F_75903496_gdIu8YcVnpNrJdN8wccw1o0PI7GHBLfi.jpg" />
+
+            <div class="inner">
+                <h2>
+                    Vediamo tre ipotesi* per proteggere la sua salute
+                </h2>
+                <div class="two-columns align-items-center justify-content-center">
+                    <div class="left proposal">
+                        <p>
+                            Ipotesi a
+                        </p>
+                        <p>
+                            20€
+                        </p>
+                        <p>
+                            al mese
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            ASSISTENZA 360 (garanzia obbligatoria): offre un supporto concreto, come un primo consulto
+                            medico generico o specialistico disponibile h24 via telefono o in video chiamata, e la
+                            consegna farmaci a domicilio (massimo 2 consegne all’anno).
+
+                            ALTA DIAGNOSTICA E FISIOTERAPIA: a disposizione fino a 2.000 euro per esami specialistici
+                            (risonanze magnetiche, ecografia...), trattamenti di fisioterapia e riabilitazione.
+
+                            Inoltre, a disposizione fino a 2.500 euro per servizi di assistenza domiciliare, come:
+                            fisioterapista, infermiere, babysitter e dog-sitter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box alternative">
+            <img src="https://as1.ftcdn.net/v2/jpg/00/75/90/34/1000_F_75903496_gdIu8YcVnpNrJdN8wccw1o0PI7GHBLfi.jpg" />
+
+            <div class="inner">
+                <h2>
+                    Vediamo tre ipotesi* per proteggere la sua salute
+                </h2>
+                <div class="two-columns align-items-center justify-content-center">
+                    <div class="left proposal">
+                        <p>
+                            Ipotesi a
+                        </p>
+                        <p>
+                            20€
+                        </p>
+                        <p>
+                            al mese
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            ASSISTENZA 360 (garanzia obbligatoria): offre un supporto concreto, come un primo consulto
+                            medico generico o specialistico disponibile h24 via telefono o in video chiamata, e la
+                            consegna farmaci a domicilio (massimo 2 consegne all’anno).
+
+                            ALTA DIAGNOSTICA E FISIOTERAPIA: a disposizione fino a 2.000 euro per esami specialistici
+                            (risonanze magnetiche, ecografia...), trattamenti di fisioterapia e riabilitazione.
+
+                            Inoltre, a disposizione fino a 2.500 euro per servizi di assistenza domiciliare, come:
+                            fisioterapista, infermiere, babysitter e dog-sitter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://as1.ftcdn.net/v2/jpg/00/75/90/34/1000_F_75903496_gdIu8YcVnpNrJdN8wccw1o0PI7GHBLfi.jpg" />
+
+            <div class="inner">
+                <h2>
+                    Vediamo tre ipotesi* per proteggere la sua salute
+                </h2>
+                <div class="two-columns align-items-center justify-content-center">
+                    <div class="left proposal">
+                        <p>
+                            Ipotesi a
+                        </p>
+                        <p>
+                            20€
+                        </p>
+                        <p>
+                            al mese
+                        </p>
+                    </div>
+                    <div class="right">
+                        <p>
+                            ASSISTENZA 360 (garanzia obbligatoria): offre un supporto concreto, come un primo consulto
+                            medico generico o specialistico disponibile h24 via telefono o in video chiamata, e la
+                            consegna farmaci a domicilio (massimo 2 consegne all’anno).
+
+                            ALTA DIAGNOSTICA E FISIOTERAPIA: a disposizione fino a 2.000 euro per esami specialistici
+                            (risonanze magnetiche, ecografia...), trattamenti di fisioterapia e riabilitazione.
+
+                            Inoltre, a disposizione fino a 2.500 euro per servizi di assistenza domiciliare, come:
+                            fisioterapista, infermiere, babysitter e dog-sitter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
