@@ -11,24 +11,28 @@
         :root {
             --primary: #99042f;
             --primary-lighter: #69001e;
-            --base-font-size: 14px;
+            --base-font-size: 16px;
             --light-grey: #5e5e5e;
         }
 
-        body {
+        html {
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: var(--base-font-size);
+        }
+
+        body {
+            font-size: 100%;
             overflow-x: hidden;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 2.5rem;
             font-weight: bold;
             text-align: center;
         }
 
         /* Article typgraphy */
         article p {
-            font-size: var(--base-font-size);
             text-align: justify;
             margin-top: 42px;
         }
@@ -39,9 +43,9 @@
         }
 
         footer {
-            margin-top: 80px;
+            margin-top: 3rem;
             text-align: center;
-            font-size: 10px;
+            font-size: .75rem;
             font-style: italic;
             color: var(--light-grey);
         }
@@ -81,7 +85,7 @@
 
         .main-layout .right {
             width: 100%;
-            margin-bottom: 42px;
+            margin-bottom: 2.8rem;
         }
 
         .main-layout .right img {
@@ -133,7 +137,7 @@
             </article>
         </div>
         <div class="right">
-            <img src="https://www.apple.com/v/iphone-se/g/images/overview/hero/hero_iphone_se_static__hs9s6m6gfmq2_large_2x.jpg" />
+            <img alt="Immagine del nuovo iphone" title="Immagine del nuovo iphone" src="https://www.apple.com/v/iphone-se/g/images/overview/hero/hero_iphone_se_static__hs9s6m6gfmq2_large_2x.jpg" />
         </div>
     </div>
     <footer>
